@@ -35,11 +35,11 @@
   position: relative;
   top: -50px;
 }
-.autoComplete-conteiner p {
+.mapOfSeznamContainer {
   font-size: 75%;
   cursor: pointer;
-  
+  padding: 10px;
 }
-.autoComplete-conteiner h5:hover {
+.cityOfSeznam:hover {
   color: black;
 }

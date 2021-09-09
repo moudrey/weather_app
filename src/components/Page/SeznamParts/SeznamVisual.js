@@ -6,19 +6,19 @@ const SeznamVisual = (cities) => {
       <>
         {cities.allCities.map((CitySeznam) => {
           return (
-            <>
-              <p key={CitySeznam.name}>
+            <div className="mapOfSeznamContainer" key={CitySeznam.name}>
+              <div>
                 {CitySeznam.name} ({CitySeznam.nativeName})
-                <h5
+                <div className="cityOfSeznam"
                   onClick={() => {
                     cities.onClick(CitySeznam.capital);
                     document.getElementById('input').value = CitySeznam.capital;
                   }}
                 >
                   {CitySeznam.capital}
-                </h5>
-              </p>
-            </>
+                </div>
+              </div>
+            </div>
           );
         })}
       </>
