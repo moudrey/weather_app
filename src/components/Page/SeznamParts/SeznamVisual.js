@@ -1,15 +1,28 @@
 const SeznamVisual = (cities) => {
-  console.log(cities);
+  const filteredCities = cities.allCities.filter((city) =>
+    city.capital
+      .toLowerCase()
+      .includes(cities.currentCity.toLowerCase().toString())
+  );
   return (
     <div className="autoComplete-conteiner">
-      <h1>{Object.values(cities.currentCity)}</h1>
+      <input
+        className="buttonInSeznam"
+        type="button"
+        value="X"
+        onClick={() => {
+          cities.onClick('');
+          document.getElementById('input').value = '';
+        }}
+      />
       <>
-        {cities.allCities.map((CitySeznam) => {
+        {filteredCities.map((CitySeznam) => {
           return (
             <div className="mapOfSeznamContainer" key={CitySeznam.name}>
               <div>
                 {CitySeznam.name} ({CitySeznam.nativeName})
-                <div className="cityOfSeznam"
+                <div
+                  className="cityOfSeznam"
                   onClick={() => {
                     cities.onClick(CitySeznam.capital);
                     document.getElementById('input').value = CitySeznam.capital;

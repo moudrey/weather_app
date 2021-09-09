@@ -14,7 +14,24 @@
   top: 145px;
   left: 30.2%;
 }
-.Page-Conteiner {
+.error {
+  background-color: aliceblue;
+  display: block;
+  color: black;
+  width: 700px;
+  height: 100px;
+  text-align: center;
+  border-radius: 5px;
+  position: absolute;
+  top: 200%;
+  left: 32%;
+  transition-duration: 1s;
+}
+.error p {
+  top: 0%;
+  position: relative;
+  text-shadow: 2px 2px black;
+  font-weight: bold;
 }
 .autoComplete-conteiner {
   border-radius: 10px;
@@ -42,4 +59,7 @@
 }
 .cityOfSeznam:hover {
   color: black;
+}
+.buttonInSeznam {
+  font-size: 150%;
 }

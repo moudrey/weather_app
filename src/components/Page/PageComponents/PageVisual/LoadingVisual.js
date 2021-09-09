@@ -4,8 +4,7 @@ const Loading = () => {
   return (
     <h1>
       {' '}
-      <Loader type="Oval" color="white" /> We are loading data from your city or
-      something goes wrong
+      <Loader type="Oval" color="white" />
     </h1>
   );
 };

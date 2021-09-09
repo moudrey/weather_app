@@ -14,9 +14,11 @@ export const useApiFetch = (city) => {
       try {
         const weatherData = await axios.get(url);
         if (weatherData.data) setWeather(weatherData.data);
+        document.getElementById('error').style.top = '100%';
+
         setLoaded(true);
       } catch (error) {
-        console.log('I dont know this city');
+        document.getElementById('error').style.top = '75%';
       } finally {
       }
     };

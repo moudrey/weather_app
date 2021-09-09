@@ -1,7 +1,10 @@
 import '../../Page.css';
+import 'weather-react-icons/lib/css/weather-icons.css';
+import { WeatherIcon } from 'weather-react-icons';
 
 export const PageVisual = (data) => {
-  console.log('Data is viewed');
+  console.log(data);
+
   return (
     <div className="Page-Conteiner">
       <div className="Weather-Conteiner">
@@ -13,10 +16,11 @@ export const PageVisual = (data) => {
           <h5>feels like {data.feelsLike}</h5>
         </div>
         <div>
-          {data.weather.map((weather) => {
+          {data.weather.map((mapWeather) => {
             return (
-              <p key={weather.id}>
-                {weather.main} <br />
+              <p key={mapWeather.id}>
+                {mapWeather.main} <br />
+                <WeatherIcon iconId={mapWeather.id} name="owm" />
               </p>
             );
           })}
