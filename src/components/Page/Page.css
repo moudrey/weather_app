@@ -47,6 +47,7 @@
   scroll-behavior: smooth;
   overflow: scroll;
   scrollbar-width: 1px;
+  overflow-x: hidden;
 }
 .autoComplete-conteiner h1 {
   position: relative;

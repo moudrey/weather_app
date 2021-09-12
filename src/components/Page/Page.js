@@ -16,7 +16,7 @@ const Page = () => {
       setCity(text);
     }, 500);
   };
-  console.log(weather);
+  console.log(process.env);
   return (
     <div>
       <div className="error" id="error">
