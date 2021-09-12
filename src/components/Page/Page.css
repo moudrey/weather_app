@@ -30,7 +30,7 @@
 .error p {
   top: 0%;
   position: relative;
-  text-shadow: 2px 2px black;
+  text-shadow: 1px 1px black;
   font-weight: bold;
 }
 .autoComplete-conteiner {

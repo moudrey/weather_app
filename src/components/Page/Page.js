@@ -16,9 +16,10 @@ const Page = () => {
       setCity(text);
     }, 500);
   };
-  console.log(process.env);
   return (
     <div>
+      {/* Here I will add map where city is and maybe more features */}
+
       <div className="error" id="error">
         <p> I don't know this city. Check your spelling </p>
       </div>

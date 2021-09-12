@@ -3,8 +3,6 @@ import 'weather-react-icons/lib/css/weather-icons.css';
 import { WeatherIcon } from 'weather-react-icons';
 
 export const PageVisual = (data) => {
-  console.log(data);
-
   return (
     <div className="Page-Conteiner">
       <div className="Weather-Conteiner">
