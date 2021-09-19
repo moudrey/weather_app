@@ -4,7 +4,7 @@ import SeznamVisual from './SeznamParts/SeznamVisual';
 import SeznamLoading from './SeznamParts/SeznamLoading';
 
 const CitySeznam = (city) => {
-  const { allCityData, isLoaded } = useAllCity();
+  const { allCityData, isLoaded, yourCity } = useAllCity();
   return (
     <>
       {isLoaded ? (
@@ -12,6 +12,7 @@ const CitySeznam = (city) => {
           allCities={allCityData}
           currentCity={city.input_City}
           onClick={city.onClick}
+          yourCity={yourCity.city}
         />
       ) : (
         <SeznamLoading />

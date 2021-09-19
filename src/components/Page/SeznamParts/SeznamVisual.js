@@ -1,4 +1,6 @@
 const SeznamVisual = (cities) => {
+  console.log(cities);
+
   const filteredCities = cities.allCities.filter((city) =>
     city.capital
       .toLowerCase()
@@ -6,6 +8,15 @@ const SeznamVisual = (cities) => {
   );
   return (
     <div className="autoComplete-conteiner">
+      <input
+        type="button"
+        className="your-city"
+        value="Your city"
+        onClick={() => {
+          cities.onClick(cities.yourCity);
+          document.getElementById('input').value = cities.yourCity;
+        }}
+      />
       <input
         className="buttonInSeznam"
         type="button"

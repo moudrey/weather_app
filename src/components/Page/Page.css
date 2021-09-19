@@ -64,3 +64,14 @@
 .buttonInSeznam {
   font-size: 150%;
 }
+.your-city {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  font-size: 100%;
+}
+.seznam-loader {
+  position: absolute;
+  left: 85%;
+  top: 25%;
+}

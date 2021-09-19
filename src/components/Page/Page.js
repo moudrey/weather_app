@@ -6,11 +6,13 @@ import LoadingVisual from './PageComponents/PageVisual/LoadingVisual';
 import CitySeznam from './CitySeznam';
 
 const Page = () => {
-  const [city, setCity] = useState('');
+  const [city, setCity] = useState('Prague');
+  const [cityForSeznam, setCityForSeznam] = useState('');
   const timeout = useRef(null);
   const { weather, loaded } = useApiFetch(city);
 
   const onChangeHandler = (text) => {
+    setCityForSeznam(text);
     if (timeout.current) clearTimeout(timeout.current);
     timeout.current = setTimeout(() => {
       setCity(text);
@@ -31,7 +33,7 @@ const Page = () => {
         placeholder="Prague"
         onChange={(e) => onChangeHandler(e.target.value)}
       />
-      <CitySeznam input_City={city} onClick={onChangeHandler} />
+      <CitySeznam input_City={cityForSeznam} onClick={onChangeHandler} />
       {loaded ? (
         <PageVisual
           city={weather.name}
