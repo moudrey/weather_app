@@ -1,12 +1,7 @@
-import Loader from 'react-loader-spinner';
 import '../Page.css';
 
 const SeznamLoading = () => {
-  return (
-    <div className="seznam-loader">
-      <Loader type="Oval" color="white" />
-    </div>
-  );
+  return <div className="seznam-loader">{''}</div>;
 };
 
 export default SeznamLoading;

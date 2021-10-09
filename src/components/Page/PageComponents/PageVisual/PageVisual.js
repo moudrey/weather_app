@@ -5,6 +5,7 @@ import { WeatherIcon } from 'weather-react-icons';
 export const PageVisual = (data) => {
   return (
     <div className="Page-Conteiner">
+    
       <div className="Weather-Conteiner">
         <h1>{Object.values(data.city)} </h1>
         <div className="temp">

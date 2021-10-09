@@ -2,10 +2,9 @@ import Loader from 'react-loader-spinner';
 
 const Loading = () => {
   return (
-    <h1>
-      {' '}
-      <Loader type="Oval" color="white" />
-    </h1>
+    <div className="weather-loading">
+      <Loader type="Oval" color="black" />
+    </div>
   );
 };
 

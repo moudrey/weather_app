@@ -1,4 +1,4 @@
-.Weather-by-city-input {
+/* .Weather-by-city-input {
   width: 750px;
   height: auto;
   font-size: 200%;
@@ -23,7 +23,7 @@
   text-align: center;
   border-radius: 5px;
   position: absolute;
-  top: 200%;
+  top: -10%;
   left: 32%;
   transition-duration: 1s;
 }
@@ -36,9 +36,9 @@
 .autoComplete-conteiner {
   border-radius: 10px;
   text-align: center;
-  position: absolute;
-  top: 5%;
-  left: 75%;
+  position: fixed;
+  top: 0%;
+  left: 80%;
   width: 400px;
   height: auto;
   max-height: 500px;
@@ -48,6 +48,8 @@
   overflow: scroll;
   scrollbar-width: 1px;
   overflow-x: hidden;
+  transition: 2s;
+  -webkit-transition: max-height 2s;
 }
 .autoComplete-conteiner h1 {
   position: relative;
@@ -61,17 +63,85 @@
 .cityOfSeznam:hover {
   color: black;
 }
-.buttonInSeznam {
-  font-size: 150%;
+.delete-city {
+  left: 70%;
 }
 .your-city {
-  position: absolute;
-  left: 0%;
-  top: 0%;
-  font-size: 100%;
+  left: 22%;
 }
+
 .seznam-loader {
   position: absolute;
   left: 85%;
   top: 25%;
 }
+.seznam {
+  left: 50%;
+  top: 0%;
+  position: fixed;
+}
+.seznam > input {
+  cursor: pointer;
+  font-size: 100%;
+  border: none;
+  background-color: #282c34;
+  color: aliceblue;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  height: 100px;
+  position: fixed;
+  border-radius: 15%;
+  transition: 0.5s;
+  top: 15%;
+}
+
+.seznam > input:hover {
+  text-shadow: 0px 20px #515251a9;
+  font-size: 120%;
+}
+
+.arrows-conteiner {
+  position: fixed;
+  top: auto;
+  cursor: pointer;
+}
+.arrows-conteiner:hover {
+  animation: moveUp 1s infinite;
+}
+@keyframes moveUp {
+  0% {
+    font-size: 100%;
+  }
+  50% {
+    font-size: 120%;
+  }
+  100% {
+    font-size: 100%;
+  }
+}
+.arrows-conteiner > * {
+  position: relative;
+  left: 25%;
+  top: 25%;
+}
+.arrowDown {
+  color: white;
+}
+.arrowUp {
+  color: black;
+}
+
+.sun-page {
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  font-size: 150px;
+  animation: sun-rotate 5s linear infinite;
+}
+@keyframes sun-rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} */

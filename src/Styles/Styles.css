@@ -1,0 +1,245 @@
+body {
+  margin-top: 50px;
+  background: #87ceeb;
+  color: #928287;
+  text-align: center;
+  overflow: hidden;
+}
+.Main-page .Parts-main-page .sun-page {
+  color: #f6f64e;
+  position: absolute;
+  left: 1%;
+  top: 1%;
+  animation: sun-rotating 2s linear infinite;
+  font-size: 500%;
+}
+@media (max-width: 1200px) {
+  .Main-page .Parts-main-page .sun-page {
+    font-size: 7em;
+  }
+}
+@media (max-width: 1200px) and (max-width: 650px) {
+  .Main-page .Parts-main-page .sun-page {
+    font-size: 2em;
+  }
+}
+@keyframes sun-rotating {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.Main-page .Parts-main-page .error {
+  color: #9b9999;
+  position: fixed;
+  background-color: #b10606;
+  height: auto;
+  transition: 0.5s;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  top: 75%;
+  left: 35%;
+  height: 200px;
+  width: 530px;
+  font-size: 300%;
+  opacity: 0;
+}
+.Main-page .Parts-main-page .error * {
+  text-align: center;
+  text-shadow: 5px 5px rgba(0, 0, 0, 0.634);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+@media (max-width: 1200px) {
+  .Main-page .Parts-main-page .error {
+    height: 100px;
+    left: auto;
+    top: 0%;
+    position: fixed;
+    width: 250px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 170%;
+    opacity: 1;
+    right: 0%;
+  }
+}
+@media (max-width: 1200px) and (max-width: 650px) {
+  .Main-page .Parts-main-page .error {
+    height: 75px;
+    opacity: 0;
+    position: fixed;
+    top: 195px !important;
+    left: 0;
+    width: 240px;
+    font-size: 100%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+.Main-page .Parts-main-page input {
+  color: #928287 / 2;
+  background-color: #bcece0;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  border-radius: 25px;
+  opacity: 0.5;
+  font-size: 600%;
+  width: 1300px;
+  height: 2em;
+}
+@media (max-width: 1200px) {
+  .Main-page .Parts-main-page input {
+    font-size: 300%;
+    width: 10em;
+    height: 2em;
+    margin-top: 80px;
+  }
+}
+@media (max-width: 1200px) and (max-width: 650px) {
+  .Main-page .Parts-main-page input {
+    font-size: 150%;
+    width: 10em;
+    height: 2em;
+    margin-top: auto;
+  }
+}
+.Page-Conteiner {
+  position: relative;
+  font-size: 315%;
+}
+@media (max-width: 1200px) {
+  .Page-Conteiner {
+    margin-top: 200px;
+    font-size: 300%;
+    text-align: center;
+    padding-right: 35px;
+  }
+}
+@media (max-width: 1200px) and (max-width: 650px) {
+  .Page-Conteiner {
+    margin-top: 50px;
+    padding-right: 0;
+    font-size: 150%;
+  }
+}
+.seznam input {
+  color: #928287;
+  background-color: #87ceeb;
+  font-weight: bold;
+  border: solid 1px #928287;
+  border-radius: 15px;
+  cursor: pointer;
+  position: fixed;
+  width: 150px;
+  height: 70px;
+  font-size: 200%;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 10px;
+  transition: 500ms;
+}
+.seznam input:hover {
+  text-shadow: 2px 10px #8080803b;
+  font-size: 120%;
+}
+@media (max-width: 650px) {
+  .seznam input {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 100px;
+    height: 50px;
+    font-size: 100%;
+  }
+}
+.seznam .your-city {
+  left: 5%;
+}
+.seznam .delete-city {
+  right: 5%;
+}
+.seznam .autoComplete-conteiner .arrows-conteiner {
+  font-size: 200%;
+  color: #87ceeb;
+  background-color: #928287;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 50%;
+  left: 98%;
+  transform: rotate(90deg);
+  z-index: 51;
+  cursor: pointer;
+}
+@media (max-width: 1200px) {
+  .seznam .autoComplete-conteiner .arrows-conteiner {
+    transform: rotate(0deg);
+    bottom: 0%;
+    left: 95%;
+  }
+}
+@media (max-width: 1200px) and (max-height: 600px) {
+  .seznam .autoComplete-conteiner .arrows-conteiner {
+    display: none;
+  }
+}
+@media (max-width: 1200px) and (max-width: 650px) {
+  .seznam .autoComplete-conteiner .arrows-conteiner {
+    left: 1%;
+  }
+}
+.seznam .autoComplete-conteiner .seznam-map-conteiner {
+  border: solid 1px black;
+  border-radius: 10px;
+  position: fixed;
+  overflow: scroll;
+  transition: 2s;
+  z-index: 50;
+  bottom: -17px;
+  right: -2%;
+  max-height: 750px;
+  width: 400px;
+}
+@media (max-width: 1200px) {
+  .seznam .autoComplete-conteiner .seznam-map-conteiner {
+    border: none;
+    bottom: 4%;
+    right: 1%;
+    text-align: right;
+    max-height: 0;
+  }
+}
+@media (max-width: 1200px) and (max-width: 650px) {
+  .seznam .autoComplete-conteiner .seznam-map-conteiner {
+    right: auto;
+    text-align: center;
+    max-height: 0;
+    bottom: 5%;
+    min-width: 250px;
+  }
+}
+@media (max-height: 600px) {
+  .seznam .autoComplete-conteiner .seznam-map-conteiner {
+    display: none;
+  }
+}
+.seznam .autoComplete-conteiner .seznam-map-conteiner span {
+  font-size: 120%;
+  color: black;
+}
+.seznam .autoComplete-conteiner .seznam-map-conteiner .cityOfSeznam {
+  color: black;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.seznam .autoComplete-conteiner .seznam-map-conteiner .cityOfSeznam:hover {
+  opacity: 1;
+}
+.weather-loading {
+  position: relative;
+  top: 190px;
+  width: 100px;
+  margin: auto;
+}
